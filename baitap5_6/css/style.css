@@ -1,0 +1,22 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+
+}
+
+#forgot{
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #ecf0f1;
+    background-color: #ecf0f1;
+    height: 50px;
+    border-radius: 5px 5px;
+}
+#forgot p{
+    text-align: center;
+    line-height: 50px;
+}
