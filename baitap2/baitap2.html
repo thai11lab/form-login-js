@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        *{
+            padding:0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .a1{
+            width: 1000px;
+            height: 2000px;
+            border: 3px solid black;
+            position: relative;
+        
+        }
+        .a2{
+            width: 300px;
+            height: 200px;
+            border: 2px solid orange;
+            top: 0px;
+            position: fixed;
+            z-index: 1;
+        }
+        .a3{
+            width: 300px;
+            height: 200px;
+            position: absolute;
+            border: 2px solid blue;
+            bottom: 0px;
+            position: fixed;
+        }
+        .a4{
+            width: 800px;
+            height: 1000px;
+            border: 3px solid tomato;
+            z-index: 0;
+            position: relative;
+        }
+        .a5{
+            width: 545px;
+            height: 300px;
+            border: 3px solid thistle;
+            display: flex;
+            z-index: 1;
+            top: 0px;
+            margin-left: 200px;
+            position:--webkit-sticky;
+            position: sticky;
+            justify-content: center;
+            align-items: center;
+        }
+        .a6{
+            background-color: aqua;
+            
+            width: 200px;
+            height: 150px;
+            
+        }
+        @media only screen and (max-width: 780px){
+            .a1, .a2 ,.a3, .a4 ,.a5{
+                width: 50%;
+            }
+            .a5{
+                margin-left:50% ;
+            }
+            .a2 , .a3{
+               position:absolute;
+            }
+        }
+
+            
+        
+        
+    </style>
+</head>
+<body>
+    
+    <div class="a1">
+        a1
+        <div class="a2">a2</div>
+        <div class="a3">a3</div>
+        <div class="a4">
+            a4
+            <div class="a5">
+                <div class="a6">a6</div>
+            </div>
+        </div>
+        
+    </div>    
+</body>
+</html>
